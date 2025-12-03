@@ -1,8 +1,8 @@
 # Business Process Model: Precision Ration Formulation
 
 **Project:** The Domestic Animal Calculator (Cow)
-**Date:** December 3, 2025
-**Group:** [Insert Your Group Name]
+**Date:** December 9, 2025
+**Group:** SUGI GISELE
 
 ---
 
