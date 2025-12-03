@@ -2,7 +2,8 @@
 
 **Project:** The Domestic Animal Calculator (Cow)
 **Date:** December 9, 2025
-**Group:** SUGI GISELE
+**Group:** D
+## NAMES: SUGI GISELE
 
 ---
 
