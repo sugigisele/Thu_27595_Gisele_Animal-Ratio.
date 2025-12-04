@@ -9,6 +9,36 @@
 ## 1. Entity-Relationship Model (ERD)
 The logical model is designed to support high-frequency transactional data (daily milk logs) while maintaining strict referential integrity for the nutritional calculation engine.
 
+## DIAGRAM .
+
+erDiagram
+    CATTLE_BREEDS ||--|{ CATTLE : "defines_genetic_traits"
+    CATTLE ||--|{ MILK_PRODUCTION : "logs_daily_yield"
+    CATTLE ||--|{ FEEDING_EVENTS : "consumes"
+    FEED_INVENTORY ||--|{ FEEDING_EVENTS : "is_used_in"
+
+    CATTLE_BREEDS {
+        int Breed_ID PK
+        string Breed_Name
+        float Target_Yield
+    }
+    CATTLE {
+        int Cow_ID PK
+        int Breed_ID FK
+        date Birth_Date
+        float Weight_Kg
+    }
+    MILK_PRODUCTION {
+        int Log_ID PK
+        int Cow_ID FK
+        date Milking_Date
+        float Yield_Liters
+    }
+    FEED_INVENTORY {
+        int Feed_ID PK
+        string Item_Name
+        float Stock_Qty
+    }
 
 ### Key Entities & Cardinalities
 * **CATTLE_BREEDS (1) ────< (N) CATTLE:**
