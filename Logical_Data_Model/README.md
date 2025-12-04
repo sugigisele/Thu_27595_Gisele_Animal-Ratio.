@@ -1,4 +1,4 @@
-# Phase III: Logical Data Model Design
+## Logical Data Model Design
 **Project:** The Domestic Animal Calculator (Cow)
 **Date:** December 9, 2025
 **Group:** D
@@ -8,9 +8,6 @@
 
 ## 1. Entity-Relationship Model (ERD)
 The logical model is designed to support high-frequency transactional data (daily milk logs) while maintaining strict referential integrity for the nutritional calculation engine.
-
-### Diagram
-![Entity Relationship Diagram](./ER_Diagram.png)
 
 
 ### Key Entities & Cardinalities
