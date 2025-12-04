@@ -11,6 +11,8 @@ The logical model is designed to support high-frequency transactional data (dail
 
 ## DIAGRAM .
 
+### Logical Diagram
+```mermaid
 erDiagram
     CATTLE_BREEDS ||--|{ CATTLE : "defines_genetic_traits"
     CATTLE ||--|{ MILK_PRODUCTION : "logs_daily_yield"
@@ -39,6 +41,8 @@ erDiagram
         string Item_Name
         float Stock_Qty
     }
+       
+  
 
 ### Key Entities & Cardinalities
 * **CATTLE_BREEDS (1) ────< (N) CATTLE:**
