@@ -42,7 +42,7 @@ erDiagram
         float Stock_Qty
     }
        
-  
+  '''
 
 ### Key Entities & Cardinalities
 * **CATTLE_BREEDS (1) ────< (N) CATTLE:**
